@@ -1,0 +1,60 @@
+D:\Hieu\QLHSApp\DAL\bin\Debug\net6.0-windows\DAL.deps.json
+D:\Hieu\QLHSApp\DAL\bin\Debug\net6.0-windows\DAL.dll
+D:\Hieu\QLHSApp\DAL\bin\Debug\net6.0-windows\DAL.pdb
+D:\Hieu\QLHSApp\DAL\bin\Debug\net6.0-windows\DTO.dll
+D:\Hieu\QLHSApp\DAL\bin\Debug\net6.0-windows\DTO.pdb
+D:\Hieu\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.csproj.AssemblyReference.cache
+D:\Hieu\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hieu\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.AssemblyInfoInputs.cache
+D:\Hieu\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.AssemblyInfo.cs
+D:\Hieu\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.csproj.CoreCompileInputs.cache
+D:\Hieu\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.csproj.CopyComplete
+D:\Hieu\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.dll
+D:\Hieu\QLHSApp\DAL\obj\Debug\net6.0-windows\refint\DAL.dll
+D:\Hieu\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.pdb
+D:\Hieu\QLHSApp\DAL\obj\Debug\net6.0-windows\ref\DAL.dll
+C:\Users\sang\Downloads\QLHSApp\DAL\bin\Debug\net6.0-windows\DAL.deps.json
+C:\Users\sang\Downloads\QLHSApp\DAL\bin\Debug\net6.0-windows\DAL.dll
+C:\Users\sang\Downloads\QLHSApp\DAL\bin\Debug\net6.0-windows\DAL.pdb
+C:\Users\sang\Downloads\QLHSApp\DAL\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\sang\Downloads\QLHSApp\DAL\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\sang\Downloads\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.csproj.AssemblyReference.cache
+C:\Users\sang\Downloads\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sang\Downloads\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.AssemblyInfoInputs.cache
+C:\Users\sang\Downloads\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.AssemblyInfo.cs
+C:\Users\sang\Downloads\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.csproj.CoreCompileInputs.cache
+C:\Users\sang\Downloads\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.csproj.CopyComplete
+C:\Users\sang\Downloads\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.dll
+C:\Users\sang\Downloads\QLHSApp\DAL\obj\Debug\net6.0-windows\refint\DAL.dll
+C:\Users\sang\Downloads\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.pdb
+C:\Users\sang\Downloads\QLHSApp\DAL\obj\Debug\net6.0-windows\ref\DAL.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\bin\Debug\net6.0-windows\DAL.deps.json
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\bin\Debug\net6.0-windows\DAL.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\bin\Debug\net6.0-windows\DAL.pdb
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.csproj.CopyComplete
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\obj\Debug\net6.0-windows\refint\DAL.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\obj\Debug\net6.0-windows\DAL.pdb
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DAL\obj\Debug\net6.0-windows\ref\DAL.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\obj\Debug\net6.0-windows\DAL.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\obj\Debug\net6.0-windows\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\obj\Debug\net6.0-windows\DAL.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\obj\Debug\net6.0-windows\DAL.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\obj\Debug\net6.0-windows\DAL.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\obj\Debug\net6.0-windows\DAL.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\obj\Debug\net6.0-windows\refint\DAL.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\obj\Debug\net6.0-windows\DAL.pdb
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\bin\Debug\net6.0-windows\DAL.deps.json
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\bin\Debug\net6.0-windows\DAL.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\bin\Debug\net6.0-windows\DAL.pdb
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\obj\Debug\net6.0-windows\DAL.csproj.CopyComplete
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DAL\obj\Debug\net6.0-windows\ref\DAL.dll

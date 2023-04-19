@@ -1,0 +1,48 @@
+D:\Hieu\QLHSApp\DTO\bin\Debug\net6.0-windows\DTO.deps.json
+D:\Hieu\QLHSApp\DTO\bin\Debug\net6.0-windows\DTO.dll
+D:\Hieu\QLHSApp\DTO\bin\Debug\net6.0-windows\DTO.pdb
+D:\Hieu\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.csproj.AssemblyReference.cache
+D:\Hieu\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hieu\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.AssemblyInfoInputs.cache
+D:\Hieu\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.AssemblyInfo.cs
+D:\Hieu\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.csproj.CoreCompileInputs.cache
+D:\Hieu\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.dll
+D:\Hieu\QLHSApp\DTO\obj\Debug\net6.0-windows\refint\DTO.dll
+D:\Hieu\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.pdb
+D:\Hieu\QLHSApp\DTO\obj\Debug\net6.0-windows\ref\DTO.dll
+C:\Users\sang\Downloads\QLHSApp\DTO\bin\Debug\net6.0-windows\DTO.deps.json
+C:\Users\sang\Downloads\QLHSApp\DTO\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\sang\Downloads\QLHSApp\DTO\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\sang\Downloads\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.csproj.AssemblyReference.cache
+C:\Users\sang\Downloads\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sang\Downloads\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.AssemblyInfoInputs.cache
+C:\Users\sang\Downloads\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.AssemblyInfo.cs
+C:\Users\sang\Downloads\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.csproj.CoreCompileInputs.cache
+C:\Users\sang\Downloads\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.dll
+C:\Users\sang\Downloads\QLHSApp\DTO\obj\Debug\net6.0-windows\refint\DTO.dll
+C:\Users\sang\Downloads\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.pdb
+C:\Users\sang\Downloads\QLHSApp\DTO\obj\Debug\net6.0-windows\ref\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\bin\Debug\net6.0-windows\DTO.deps.json
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\obj\Debug\net6.0-windows\refint\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\obj\Debug\net6.0-windows\DTO.pdb
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\DTO\obj\Debug\net6.0-windows\ref\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\bin\Debug\net6.0-windows\DTO.deps.json
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\obj\Debug\net6.0-windows\DTO.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\obj\Debug\net6.0-windows\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\obj\Debug\net6.0-windows\DTO.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\obj\Debug\net6.0-windows\DTO.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\obj\Debug\net6.0-windows\DTO.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\obj\Debug\net6.0-windows\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\obj\Debug\net6.0-windows\refint\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\obj\Debug\net6.0-windows\DTO.pdb
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\DTO\obj\Debug\net6.0-windows\ref\DTO.dll

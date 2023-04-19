@@ -1,0 +1,68 @@
+D:\Hieu\QLHSApp\BUS\bin\Debug\net6.0-windows\BUS.deps.json
+D:\Hieu\QLHSApp\BUS\bin\Debug\net6.0-windows\BUS.dll
+D:\Hieu\QLHSApp\BUS\bin\Debug\net6.0-windows\BUS.pdb
+D:\Hieu\QLHSApp\BUS\bin\Debug\net6.0-windows\DAL.dll
+D:\Hieu\QLHSApp\BUS\bin\Debug\net6.0-windows\DTO.dll
+D:\Hieu\QLHSApp\BUS\bin\Debug\net6.0-windows\DAL.pdb
+D:\Hieu\QLHSApp\BUS\bin\Debug\net6.0-windows\DTO.pdb
+D:\Hieu\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.csproj.AssemblyReference.cache
+D:\Hieu\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hieu\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.AssemblyInfoInputs.cache
+D:\Hieu\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.AssemblyInfo.cs
+D:\Hieu\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.csproj.CoreCompileInputs.cache
+D:\Hieu\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.csproj.CopyComplete
+D:\Hieu\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.dll
+D:\Hieu\QLHSApp\BUS\obj\Debug\net6.0-windows\refint\BUS.dll
+D:\Hieu\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.pdb
+D:\Hieu\QLHSApp\BUS\obj\Debug\net6.0-windows\ref\BUS.dll
+C:\Users\sang\Downloads\QLHSApp\BUS\bin\Debug\net6.0-windows\BUS.deps.json
+C:\Users\sang\Downloads\QLHSApp\BUS\bin\Debug\net6.0-windows\BUS.dll
+C:\Users\sang\Downloads\QLHSApp\BUS\bin\Debug\net6.0-windows\BUS.pdb
+C:\Users\sang\Downloads\QLHSApp\BUS\bin\Debug\net6.0-windows\DAL.dll
+C:\Users\sang\Downloads\QLHSApp\BUS\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\sang\Downloads\QLHSApp\BUS\bin\Debug\net6.0-windows\DAL.pdb
+C:\Users\sang\Downloads\QLHSApp\BUS\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\sang\Downloads\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.csproj.AssemblyReference.cache
+C:\Users\sang\Downloads\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sang\Downloads\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.AssemblyInfoInputs.cache
+C:\Users\sang\Downloads\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.AssemblyInfo.cs
+C:\Users\sang\Downloads\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.csproj.CoreCompileInputs.cache
+C:\Users\sang\Downloads\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.csproj.CopyComplete
+C:\Users\sang\Downloads\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.dll
+C:\Users\sang\Downloads\QLHSApp\BUS\obj\Debug\net6.0-windows\refint\BUS.dll
+C:\Users\sang\Downloads\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.pdb
+C:\Users\sang\Downloads\QLHSApp\BUS\obj\Debug\net6.0-windows\ref\BUS.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\bin\Debug\net6.0-windows\BUS.deps.json
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\bin\Debug\net6.0-windows\BUS.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\bin\Debug\net6.0-windows\BUS.pdb
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\bin\Debug\net6.0-windows\DAL.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\bin\Debug\net6.0-windows\DAL.pdb
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.csproj.CopyComplete
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\obj\Debug\net6.0-windows\refint\BUS.dll
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\obj\Debug\net6.0-windows\BUS.pdb
+C:\Users\HP\OneDrive\Máy tính\QLHSApp\QLHSApp\BUS\obj\Debug\net6.0-windows\ref\BUS.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\bin\Debug\net6.0-windows\BUS.deps.json
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\bin\Debug\net6.0-windows\BUS.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\bin\Debug\net6.0-windows\BUS.pdb
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\bin\Debug\net6.0-windows\DAL.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\bin\Debug\net6.0-windows\DAL.pdb
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\obj\Debug\net6.0-windows\BUS.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\obj\Debug\net6.0-windows\BUS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\obj\Debug\net6.0-windows\BUS.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\obj\Debug\net6.0-windows\BUS.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\obj\Debug\net6.0-windows\BUS.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\obj\Debug\net6.0-windows\BUS.csproj.CopyComplete
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\obj\Debug\net6.0-windows\BUS.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\obj\Debug\net6.0-windows\refint\BUS.dll
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\obj\Debug\net6.0-windows\BUS.pdb
+C:\Users\HP\OneDrive\Máy tính\AppQLHS\BUS\obj\Debug\net6.0-windows\ref\BUS.dll
