@@ -99,6 +99,7 @@ namespace GUI_QLHSApp
                 nudMaTK.Enabled = true;
                 txtTenTK.Enabled = false;
             }
+            cbMaGiaoVien.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void rdMa_CheckedChanged(object sender, EventArgs e)

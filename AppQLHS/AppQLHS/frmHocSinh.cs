@@ -68,7 +68,7 @@ namespace GUI_QLHSApp
 
             HocSinh_BUS hs = new HocSinh_BUS();
             dgvHocSinh.DataSource = hs.getHocSinh();
-
+            cbMaL.DropDownStyle = ComboBoxStyle.DropDownList;
         }
         public void resetGiaTri()
         {

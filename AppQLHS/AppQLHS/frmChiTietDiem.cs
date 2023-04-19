@@ -43,6 +43,7 @@ namespace AppQLHS
             int idhs = hocsinh.MaHS;
             Diem_BUS d = new Diem_BUS();
             dgvDiem.DataSource = d.getDiemByIDMon(idhs, idMon);
+            cbMon.DropDownStyle = ComboBoxStyle.DropDownList;
 
         }
 

@@ -24,6 +24,7 @@ namespace GUI_QLHSApp
             txtTenHS.Enabled = false;
             txtMaHocSinh.Enabled = false;
             hss = hs;
+
         }
 
         public void getNewIDDiem()
@@ -35,6 +36,7 @@ namespace GUI_QLHSApp
         }
         private void frmDiem_Load(object sender, EventArgs e)
         {
+
             Mon_BUS m = new Mon_BUS();
             LoaiDiem_BUS lo = new LoaiDiem_BUS();
             cbLoaiDiem.DataSource = lo.getLoaiDiem();
@@ -47,6 +49,9 @@ namespace GUI_QLHSApp
 
             Diem_BUS diem = new Diem_BUS();
             dgvDiem.DataSource = diem.getDiemByIDMon(hss.MaHS, idMon);
+            cbMon.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbLoaiDiem.DropDownStyle = ComboBoxStyle.DropDownList;
+
         }
 
         public void loadDiemDGV()

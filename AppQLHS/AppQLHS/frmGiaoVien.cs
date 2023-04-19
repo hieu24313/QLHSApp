@@ -114,7 +114,7 @@ namespace GUI_QLHSApp
 
         private void btnThemGV_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtTenGV.Text) || string.IsNullOrEmpty(txtHoGV.Text) || string.IsNullOrEmpty(txtQueQuanGV.Text) || string.IsNullOrEmpty(txtSODTGV.Text))
+            if (string.IsNullOrEmpty(txtTenGV.Text) || string.IsNullOrEmpty(txtHoGV.Text) || string.IsNullOrEmpty(txtQueQuanGV.Text) || string.IsNullOrEmpty(txtSODTGV.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!!!");
             }
@@ -160,9 +160,9 @@ namespace GUI_QLHSApp
                 {
                     MessageBox.Show("Mã giáo viên này đã tồn tại!!!");
                 }
-                
+
             }
-            
+
         }
 
         private void dgvGiaoVien_SelectionChanged(object sender, EventArgs e)
@@ -199,7 +199,7 @@ namespace GUI_QLHSApp
                 }
             }
 
-            
+
         }
 
         private void btnSuaGV_Click(object sender, EventArgs e)
@@ -214,7 +214,7 @@ namespace GUI_QLHSApp
             string dt = txtSODTGV.Text;
             GiaoVien_DTO gvadd = new GiaoVien_DTO(ma, ho, ten, ns, qq, dt);
             bool kt = gv1.updateGiaoVien(gvadd);
-            if(kt)
+            if (kt)
             {
                 dgvGiaoVien.DataSource = gv.loadGiaoVien();
                 MessageBox.Show("Cập nhật thành công!!!");

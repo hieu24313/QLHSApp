@@ -166,7 +166,7 @@
             // 
             // btnSuaGV
             // 
-            btnSuaGV.Location = new Point(828, 207);
+            btnSuaGV.Location = new Point(852, 207);
             btnSuaGV.Name = "btnSuaGV";
             btnSuaGV.Size = new Size(94, 52);
             btnSuaGV.TabIndex = 12;
@@ -176,7 +176,7 @@
             // 
             // btnXoaGV
             // 
-            btnXoaGV.Location = new Point(703, 207);
+            btnXoaGV.Location = new Point(710, 207);
             btnXoaGV.Name = "btnXoaGV";
             btnXoaGV.Size = new Size(94, 52);
             btnXoaGV.TabIndex = 13;
@@ -261,7 +261,7 @@
             // 
             // btnThoat
             // 
-            btnThoat.Location = new Point(948, 207);
+            btnThoat.Location = new Point(992, 207);
             btnThoat.Name = "btnThoat";
             btnThoat.Size = new Size(94, 52);
             btnThoat.TabIndex = 18;
