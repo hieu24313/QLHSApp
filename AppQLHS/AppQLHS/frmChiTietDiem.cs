@@ -18,6 +18,8 @@ namespace AppQLHS
         public frmChiTietDiem(DTO.HocSinh_DTO hs)
         {
             InitializeComponent();
+            this.MaximizeBox = false; // chặn phóng to form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             hocsinh = hs;
         }
 
@@ -42,7 +44,7 @@ namespace AppQLHS
             int idMon = int.Parse((string)tempidMon[0]);
             int idhs = hocsinh.MaHS;
             Diem_BUS d = new Diem_BUS();
-            dgvDiem.DataSource = d.getDiemByIDMon(idhs, idMon);
+            dgvDiem.DataSource = d.getChiTietDiem(idhs, idMon);
             cbMon.DropDownStyle = ComboBoxStyle.DropDownList;
 
         }
@@ -54,7 +56,7 @@ namespace AppQLHS
             int idMon = int.Parse((string)tempidMon[0]);
             int idhs = hocsinh.MaHS;
             Diem_BUS d = new Diem_BUS();
-            dgvDiem.DataSource = d.getDiemByIDMon(idhs, idMon);
+            dgvDiem.DataSource = d.getChiTietDiem(idhs, idMon);
         }
     }
 }

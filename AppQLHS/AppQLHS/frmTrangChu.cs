@@ -8,6 +8,9 @@ namespace QLHSApp
         public frmTrangChu()
         {
             InitializeComponent();
+            this.MaximizeBox = false; // chặn phóng to form
+                                      // this.MinimizeBox = false; // chặn thu nhỏ form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void menuItemQLLOP_Click(object sender, EventArgs e)

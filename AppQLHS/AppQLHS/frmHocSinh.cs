@@ -18,6 +18,9 @@ namespace GUI_QLHSApp
         public frmHocSinh()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false; // chặn phóng to form
+           // this.MinimizeBox = false; // chặn thu nhỏ form
         }
 
         private void btThoat_Click(object sender, EventArgs e)
@@ -67,7 +70,7 @@ namespace GUI_QLHSApp
             }
 
             HocSinh_BUS hs = new HocSinh_BUS();
-            dgvHocSinh.DataSource = hs.getHocSinh();
+            dgvHocSinh.DataSource = hs.getHSByDTB();
             cbMaL.DropDownStyle = ComboBoxStyle.DropDownList;
         }
         public void resetGiaTri()
@@ -82,7 +85,7 @@ namespace GUI_QLHSApp
         private void rdMa_CheckedChanged(object sender, EventArgs e)
         {
             HocSinh_BUS hs = new HocSinh_BUS();
-            dgvHocSinh.DataSource = hs.getHocSinh();
+            dgvHocSinh.DataSource = hs.getHSByDTB();
             txtTenTK.Enabled = false;
             nudMaTK.Enabled = true;
         }
@@ -90,7 +93,7 @@ namespace GUI_QLHSApp
         private void rdTen_CheckedChanged(object sender, EventArgs e)
         {
             HocSinh_BUS hs = new HocSinh_BUS();
-            dgvHocSinh.DataSource = hs.getHocSinh();
+            dgvHocSinh.DataSource = hs.getHSByDTB();
             txtTenTK.Enabled = true;
             nudMaTK.Enabled = false;
         }
@@ -146,7 +149,7 @@ namespace GUI_QLHSApp
                     {
                         MessageBox.Show("Thêm học sinh thành công!!");
                         resetGiaTri();
-                        dgvHocSinh.DataSource = h.getHocSinh();
+                        dgvHocSinh.DataSource = h.getHSByDTB();
                     }
                     else
                     {
@@ -219,7 +222,7 @@ namespace GUI_QLHSApp
                     {
                         MessageBox.Show("Cập nhật học sinh thành công!!");
                         resetGiaTri();
-                        dgvHocSinh.DataSource = h.getHocSinh();
+                        dgvHocSinh.DataSource = h.getHSByDTB();
                     }
                     else
                     {
@@ -247,6 +250,11 @@ namespace GUI_QLHSApp
             HocSinh_DTO hs = new HocSinh_DTO(maHS, ho, ten, gioiTinh, ngaySinh, maLop);
             frmDiem ctd = new frmDiem(hs);
             ctd.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

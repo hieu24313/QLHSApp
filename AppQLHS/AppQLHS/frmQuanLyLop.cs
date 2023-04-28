@@ -18,6 +18,9 @@ namespace GUI_QLHSApp
         public frmQuanLyLop()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false; // chặn phóng to form
+                                      // this.MinimizeBox = false; // chặn thu nhỏ form
         }
 
         private void btThoat_Click(object sender, EventArgs e)
@@ -34,7 +37,7 @@ namespace GUI_QLHSApp
             QuanLyLop_BUS ql = new QuanLyLop_BUS();
             if (string.IsNullOrEmpty(txtTenLop.Text) || string.IsNullOrEmpty(txtNamHoc.Text) || cbMaGiaoVien.SelectedIndex == -1)
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!!!");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             }
             else
             {
@@ -60,7 +63,7 @@ namespace GUI_QLHSApp
                     bool kt = ql.updateLop(lop);
                     if (kt)
                     {
-                        MessageBox.Show("Sửa lớp thành công!!!");
+                        MessageBox.Show("Sửa lớp thành công!");
                         dgvQuanLyLop.DataSource = ql.getLop();
                         txtNamHoc.Text = "";
                         txtTenLop.Text = "";
@@ -68,12 +71,12 @@ namespace GUI_QLHSApp
                     }
                     else
                     {
-                        MessageBox.Show("Sửa lớp không thành công!!!");
+                        MessageBox.Show("Sửa lớp không thành công!");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Mã lớp này không tồn tại vui lòng kiểm tra lại!!!");
+                    MessageBox.Show("Mã lớp này không tồn tại vui lòng kiểm tra lại!");
 
                 }
             }
@@ -86,7 +89,7 @@ namespace GUI_QLHSApp
             cbMaGiaoVien.DataSource = gv.loadGiaoVien();
             cbMaGiaoVien.DisplayMember = "Name";
             cbMaGiaoVien.DropDownStyle = ComboBoxStyle.DropDownList;
-            dgvQuanLyLop.DataSource = ql.getLop();
+            dgvQuanLyLop.DataSource = ql.getlopDTT();
 
             rdMa.Checked = true;
             if (rdMa.Checked)
@@ -105,7 +108,7 @@ namespace GUI_QLHSApp
         private void rdMa_CheckedChanged(object sender, EventArgs e)
         {
             QuanLyLop_BUS ql = new QuanLyLop_BUS();
-            dgvQuanLyLop.DataSource = ql.getLop();
+            dgvQuanLyLop.DataSource = ql.getlopDTT();
             nudMaTK.Enabled = true;
             txtTenTK.Enabled = false;
         }
@@ -113,7 +116,7 @@ namespace GUI_QLHSApp
         private void rdTen_CheckedChanged(object sender, EventArgs e)
         {
             QuanLyLop_BUS ql = new QuanLyLop_BUS();
-            dgvQuanLyLop.DataSource = ql.getLop();
+            dgvQuanLyLop.DataSource = ql.getlopDTT();
             nudMaTK.Enabled = false;
             txtTenTK.Enabled = true;
         }
@@ -123,7 +126,7 @@ namespace GUI_QLHSApp
             QuanLyLop_BUS ql = new QuanLyLop_BUS();
             if (string.IsNullOrEmpty(txtTenLop.Text) || string.IsNullOrEmpty(txtNamHoc.Text) || cbMaGiaoVien.SelectedIndex == -1)
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!!!");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
             }
             else
             {
@@ -148,20 +151,20 @@ namespace GUI_QLHSApp
                     bool kt = ql.addLop(lop);
                     if (kt)
                     {
-                        MessageBox.Show("Thêm lớp mới thành công!!!");
-                        dgvQuanLyLop.DataSource = ql.getLop();
+                        MessageBox.Show("Thêm lớp mới thành công!");
+                        dgvQuanLyLop.DataSource = ql.getlopDTT();
                         txtNamHoc.Text = "";
                         txtTenLop.Text = "";
                         nudMaLop.Value = 0;
                     }
                     else
                     {
-                        MessageBox.Show("Thêm lớp mới không thành công!!!");
+                        MessageBox.Show("Thêm lớp mới không thành công!");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Mã lớp này đã tồn tại vui lòng chọn mã lớp khác!!!");
+                    MessageBox.Show("Mã lớp này đã tồn tại vui lòng chọn mã lớp khác!");
 
                 }
             }
@@ -225,16 +228,16 @@ namespace GUI_QLHSApp
                     if (kt)
                     {
                         MessageBox.Show("Xóa thành công!!!");
-                        dgvQuanLyLop.DataSource = ql.getLop();
+                        dgvQuanLyLop.DataSource = ql.getlopDTT();
                     }
                     else
                     {
-                        MessageBox.Show("Xóa không thành công!!!");
+                        MessageBox.Show("Xóa không thành công vì vẫn còn học sinh trong lớp này!");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Vui lòng kiểm tra lại không có mã lớp này!!!");
+                    MessageBox.Show("Vui lòng kiểm tra lại không có mã lớp này!");
                 }
             }
         }
@@ -246,7 +249,7 @@ namespace GUI_QLHSApp
             string tenLop = dgvQuanLyLop.Rows[vt].Cells[1].Value.ToString();
             int idgv = (int)dgvQuanLyLop.Rows[vt].Cells[2].Value;
             string namHoc = dgvQuanLyLop.Rows[vt].Cells[3].Value.ToString();
-            Lop_DTO lp = new Lop_DTO(id, tenLop, idgv,namHoc);
+            Lop_DTO lp = new Lop_DTO(id, tenLop, idgv, namHoc);
             frmChiTietLop ctl = new frmChiTietLop(lp);
             ctl.Show();
         }

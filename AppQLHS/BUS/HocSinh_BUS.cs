@@ -2,6 +2,7 @@
 using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,12 @@ namespace BUS
 {
     public class HocSinh_BUS
     {
+
+        public DataTable getHSByDTB()
+        {
+            HocSinh_DAL s = new HocSinh_DAL();
+            return s.getHSByDTB();
+        }
         public List<HocSinh_DTO> getHocSinh()
         {
             HocSinh_DAL hs = new HocSinh_DAL();
@@ -22,7 +29,7 @@ namespace BUS
             return hs.getHocSinhByID(id);
         }
 
-        public List<HocSinh_DTO> getHocSinhbyLopID(int id)
+        public DataTable getHocSinhbyLopID(int id)
         {
             HocSinh_DAL hs = new HocSinh_DAL();
             return hs.getHocSinhbyLopID(id);

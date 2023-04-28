@@ -1,20 +1,46 @@
 ﻿using DTO;
+using Microsoft.VisualBasic.Logging;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
+using System.Windows.Forms;
+using System.Data;
 
 namespace DAL
 {
+    
     public class HocSinh_DAL
     {
+        public DataTable getHSByDTB()
+        {
+
+            Connection conn = new Connection();
+            SqlConnection connection = conn.OpenConnection();
+            string sqlQuery = "SELECT HocSinh.MaHS as \"Mã Học Sinh\", HocSinh.Ho as \"Họ\", HocSinh.Ten as \"Tên\", HocSinh.GioiTinh as \"Giới Tính\", HocSinh.NgaySinh as \"Ngày Sinh\", HocSinh.MaLop as \"Mã Lớp\" FROM HocSinh";
+            DataTable dt = new DataTable();
+            SqlCommand command = new SqlCommand(sqlQuery, connection);
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            try
+            {
+                da.Fill(dt);
+                connection.Close();
+                return dt;
+            }
+            catch (Exception)
+            {
+                connection.Close();
+                return dt;
+            }
+        }
         public List<HocSinh_DTO> getHocSinh()
         {
             Connection conn = new Connection();
             List<HocSinh_DTO> hs = new List<HocSinh_DTO>();
-            string sqlQuery = "SELECT * FROM HocSinh";
+            string sqlQuery = "SELECT HocSinh.MaHS as \"Mã Học Sinh\", HocSinh.Ho as \"Họ\", HocSinh.Ten as \"Tên\", HocSinh.GioiTinh as \"Giới Tính\", HocSinh.NgaySinh as \"Ngày Sinh\", HocSinh.MaLop as \"Mã Lớp\" FROM HocSinh";
             using (SqlConnection connection = conn.OpenConnection())
             {
                 using (SqlCommand command = new SqlCommand(sqlQuery, connection))
@@ -37,7 +63,29 @@ namespace DAL
             } return hs;
         }
 
-        public List<HocSinh_DTO> getHocSinhbyLopID(int id)
+        public DataTable getHocSinhbyLopID(int MaLop)
+        {
+
+            Connection conn = new Connection();
+            SqlConnection connection = conn.OpenConnection();
+            string sqlQuery = "SELECT HocSinh.MaHS as \"Mã Học Sinh\", HocSinh.Ho as \"Họ\", HocSinh.Ten as \"Tên\", HocSinh.GioiTinh as \"Giới Tính\", HocSinh.NgaySinh as \"Ngày Sinh\" FROM HocSinh where MaLop =" + MaLop + ";";
+            DataTable dt = new DataTable();
+            SqlCommand command = new SqlCommand(sqlQuery, connection);
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            try
+            {
+                da.Fill(dt);
+                connection.Close();
+                return dt;
+            }
+            catch (Exception)
+            {
+                connection.Close();
+                return dt;
+            }
+        }
+
+        /*public List<HocSinh_DTO> getHocSinhbyLopID(int id)
         {
             Connection conn = new Connection();
             List<HocSinh_DTO> hs = new List<HocSinh_DTO>();
@@ -63,7 +111,7 @@ namespace DAL
                 }
             }
             return hs;
-        }
+        }*/
 
         public List<HocSinh_DTO> getHocSinhByID(int id)
         {

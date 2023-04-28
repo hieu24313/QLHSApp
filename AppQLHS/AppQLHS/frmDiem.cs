@@ -24,7 +24,9 @@ namespace GUI_QLHSApp
             txtTenHS.Enabled = false;
             txtMaHocSinh.Enabled = false;
             hss = hs;
-
+            this.MaximizeBox = false; // chặn phóng to form
+            // this.MinimizeBox = false; // chặn thu nhỏ form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         public void getNewIDDiem()
@@ -51,6 +53,7 @@ namespace GUI_QLHSApp
             dgvDiem.DataSource = diem.getDiemByIDMon(hss.MaHS, idMon);
             cbMon.DropDownStyle = ComboBoxStyle.DropDownList;
             cbLoaiDiem.DropDownStyle = ComboBoxStyle.DropDownList;
+
 
         }
 
@@ -118,7 +121,10 @@ namespace GUI_QLHSApp
                 }
                 else
                 {
-                    MessageBox.Show("Mã điểm đã tồn tại!!!");
+                    Diem_BUS d = new Diem_BUS();
+                    List<Diem_DTO> di = d.getDiem();
+                    int iddiemcuoi = di[di.Count - 1].MaDiem1 + 1;
+                    MessageBox.Show("Mã điểm đã tồn tại! Mã điểm khuyễn nghị là:"+ iddiemcuoi);
                 }
             }
         }
@@ -137,6 +143,7 @@ namespace GUI_QLHSApp
 
         private void dgvDiem_SelectionChanged(object sender, EventArgs e)
         {
+            
             LoaiDiem_BUS ld = new LoaiDiem_BUS();
             Mon_BUS mon = new Mon_BUS();
             List<LoaiDiem_DTO> loaidiem = ld.getLoaiDiem();
@@ -213,18 +220,23 @@ namespace GUI_QLHSApp
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            Diem_BUS diem = new Diem_BUS();
-            int iddiem = (int)nudMaDiem.Value;
-            bool kt = diem.delDiem(iddiem);
-            if (kt)
+            DialogResult rs = MessageBox.Show("Bạn có chắc muốn xóa điểm này không?",
+                "Thoát", MessageBoxButtons.YesNoCancel);
+            if (rs == DialogResult.Yes)
             {
-                MessageBox.Show("Xóa điểm thành công!!!");
-                loadDiemDGV();
-                resetGiaTri();
-            }
-            else
-            {
-                MessageBox.Show("Xóa điểm không thành công!!!");
+                Diem_BUS diem = new Diem_BUS();
+                int iddiem = (int)nudMaDiem.Value;
+                bool kt = diem.delDiem(iddiem);
+                if (kt)
+                {
+                    MessageBox.Show("Xóa điểm thành công!!!");
+                    loadDiemDGV();
+                    resetGiaTri();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa điểm không thành công!!!");
+                }
             }
         }
 

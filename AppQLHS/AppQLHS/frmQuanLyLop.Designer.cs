@@ -103,6 +103,7 @@
             // 
             nudMaLop.Location = new Point(134, 45);
             nudMaLop.Margin = new Padding(3, 4, 3, 4);
+            nudMaLop.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             nudMaLop.Name = "nudMaLop";
             nudMaLop.Size = new Size(143, 27);
             nudMaLop.TabIndex = 6;
@@ -185,7 +186,7 @@
             txtTenTK.Location = new Point(81, 107);
             txtTenTK.Margin = new Padding(3, 4, 3, 4);
             txtTenTK.Name = "txtTenTK";
-            txtTenTK.Size = new Size(148, 27);
+            txtTenTK.Size = new Size(125, 27);
             txtTenTK.TabIndex = 14;
             // 
             // btnTim

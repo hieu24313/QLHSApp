@@ -126,6 +126,8 @@
             Controls.Add(label2);
             Controls.Add(dgvDiem);
             Controls.Add(label1);
+            MaximumSize = new Size(967, 596);
+            MinimumSize = new Size(967, 596);
             Name = "frmChiTietDiem";
             Text = "frmChiTietDiem";
             Load += frmChiTietDiem_Load;

@@ -155,6 +155,7 @@
             // 
             nudMaDiem.Location = new Point(149, 83);
             nudMaDiem.Margin = new Padding(3, 4, 3, 4);
+            nudMaDiem.Maximum = new decimal(new int[] { 1000000000, 0, 0, 0 });
             nudMaDiem.Name = "nudMaDiem";
             nudMaDiem.Size = new Size(137, 27);
             nudMaDiem.TabIndex = 4;

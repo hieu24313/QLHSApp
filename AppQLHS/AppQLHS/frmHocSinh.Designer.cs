@@ -81,11 +81,13 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin học sinh";
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // nudMaHS
             // 
             nudMaHS.Location = new Point(128, 53);
             nudMaHS.Margin = new Padding(3, 4, 3, 4);
+            nudMaHS.Maximum = new decimal(new int[] { 1410065408, 2, 0, 0 });
             nudMaHS.Name = "nudMaHS";
             nudMaHS.Size = new Size(137, 27);
             nudMaHS.TabIndex = 12;
@@ -238,6 +240,7 @@
             // 
             nudMaTK.Location = new Point(74, 29);
             nudMaTK.Margin = new Padding(3, 4, 3, 4);
+            nudMaTK.Maximum = new decimal(new int[] { 100000000, 0, 0, 0 });
             nudMaTK.Name = "nudMaTK";
             nudMaTK.Size = new Size(137, 27);
             nudMaTK.TabIndex = 1;

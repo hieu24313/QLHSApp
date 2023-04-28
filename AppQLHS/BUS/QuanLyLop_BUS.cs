@@ -5,11 +5,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace BUS
 {
     public class QuanLyLop_BUS
     {
+        public DataTable getlopDTT()
+        {
+            QuanLyLop_DAL d = new QuanLyLop_DAL();
+            return d.getlopDTT();
+        }
         public List<Lop_DTO> getLop()
         {
             QuanLyLop_DAL qll = new QuanLyLop_DAL();

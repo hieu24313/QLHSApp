@@ -20,12 +20,15 @@ namespace GUI_QLHSApp
         public frmGiaoVien()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false; // chặn phóng to form
+           // this.MinimizeBox = false; // chặn thu nhỏ form
         }
 
         private void frmGiaoVien_Load(object sender, EventArgs e)
         {
             rdMa.Checked = true;
-            dgvGiaoVien.DataSource = gv.loadGiaoVien();
+            dgvGiaoVien.DataSource = gv.loadGiaoVien1();
             nudMaGV.Value = gv.loadGiaoVien().Last().MAGV1 + 1;
             txtHoGV.Text = "";
             txtTenGV.Text = "";
@@ -99,7 +102,7 @@ namespace GUI_QLHSApp
         private void rdMa_CheckedChanged(object sender, EventArgs e)
         {
             GiaoVien_BUS gv = new GiaoVien_BUS();
-            dgvGiaoVien.DataSource = gv.loadGiaoVien();
+            dgvGiaoVien.DataSource = gv.loadGiaoVien1();
             nudMa.Enabled = true;
             txtTimGV.Enabled = false;
         }
@@ -107,7 +110,7 @@ namespace GUI_QLHSApp
         private void rdTen_CheckedChanged(object sender, EventArgs e)
         {
             GiaoVien_BUS gv = new GiaoVien_BUS();
-            dgvGiaoVien.DataSource = gv.loadGiaoVien();
+            dgvGiaoVien.DataSource = gv.loadGiaoVien1();
             nudMa.Enabled = false;
             txtTimGV.Enabled = true;
         }
@@ -167,13 +170,14 @@ namespace GUI_QLHSApp
 
         private void dgvGiaoVien_SelectionChanged(object sender, EventArgs e)
         {
-            int vt = dgvGiaoVien.CurrentCell.RowIndex;
-            nudMaGV.Value = (int)dgvGiaoVien.Rows[vt].Cells[0].Value;
-            txtHoGV.Text = dgvGiaoVien.Rows[vt].Cells[1].Value.ToString();
-            txtTenGV.Text = dgvGiaoVien.Rows[vt].Cells[2].Value.ToString();
-            dtpNgaySinhGV.Value = (DateTime)dgvGiaoVien.Rows[vt].Cells[3].Value;
-            txtQueQuanGV.Text = dgvGiaoVien.Rows[vt].Cells[4].Value.ToString();
-            txtSODTGV.Text = dgvGiaoVien.Rows[vt].Cells[5].Value.ToString();
+                int vt = dgvGiaoVien.CurrentCell.RowIndex;
+                nudMaGV.Value = (int)dgvGiaoVien.Rows[vt].Cells[0].Value;
+                txtHoGV.Text = dgvGiaoVien.Rows[vt].Cells[1].Value.ToString();
+                txtTenGV.Text = dgvGiaoVien.Rows[vt].Cells[2].Value.ToString();
+                dtpNgaySinhGV.Value = (DateTime)dgvGiaoVien.Rows[vt].Cells[3].Value;
+                txtQueQuanGV.Text = dgvGiaoVien.Rows[vt].Cells[4].Value.ToString();
+                txtSODTGV.Text = dgvGiaoVien.Rows[vt].Cells[5].Value.ToString();
+            
         }
 
         private void btnXoaGV_Click(object sender, EventArgs e)
@@ -216,7 +220,7 @@ namespace GUI_QLHSApp
             bool kt = gv1.updateGiaoVien(gvadd);
             if (kt)
             {
-                dgvGiaoVien.DataSource = gv.loadGiaoVien();
+                dgvGiaoVien.DataSource = gv.loadGiaoVien1();
                 MessageBox.Show("Cập nhật thành công!!!");
             }
             else

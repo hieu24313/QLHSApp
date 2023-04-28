@@ -18,6 +18,9 @@ namespace GUI_QLHSApp
         public frmMon()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false; // chặn phóng to form
+           // this.MinimizeBox = false; // chặn thu nhỏ form
         }
 
         private void btThoat_Click(object sender, EventArgs e)
@@ -32,7 +35,7 @@ namespace GUI_QLHSApp
 
         private void btThemMon_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtTenMon.Text) || nudMaMon.Value != 0)
+            if (string.IsNullOrEmpty(txtTenMon.Text) || nudMaMon.Value == 0)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!!!");
 
@@ -108,7 +111,7 @@ namespace GUI_QLHSApp
 
         private void dgvMon_SelectionChanged(object sender, EventArgs e)
         {
-            int vt = dgvMon.CurrentCell.ColumnIndex;
+            int vt = dgvMon.CurrentRow.Index;
             nudMaMon.Value = (int)dgvMon.Rows[vt].Cells[0].Value;
             txtTenMon.Text = dgvMon.Rows[vt].Cells[1].Value.ToString();
         }
@@ -174,7 +177,7 @@ namespace GUI_QLHSApp
 
         private void btXoaMon_Click(object sender, EventArgs e)
         {
-            DialogResult rs = MessageBox.Show("Bạn có chắc muốn xóa môn " + txtTenMon + " không?",
+            DialogResult rs = MessageBox.Show("Bạn có chắc muốn xóa môn " + txtTenMon.Text + " không?",
                 "Thoát", MessageBoxButtons.YesNoCancel);
             if (rs == DialogResult.Yes)
             {

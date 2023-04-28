@@ -96,6 +96,7 @@
             // 
             nudMaLD.Location = new Point(127, 33);
             nudMaLD.Margin = new Padding(3, 4, 3, 4);
+            nudMaLD.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             nudMaLD.Name = "nudMaLD";
             nudMaLD.Size = new Size(137, 27);
             nudMaLD.TabIndex = 4;

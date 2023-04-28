@@ -2,6 +2,7 @@
 using Microsoft.VisualBasic.Logging;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -149,6 +150,28 @@ namespace DAL
             {
                 connection.Close();
                 return false;
+            }
+        }
+
+        public DataTable getChiTietDiem(int MaHS, int MaMon)
+        {
+
+            Connection conn = new Connection();
+            SqlConnection connection = conn.OpenConnection();
+            string sqlQuery = "SELECT Diem.MaDiem as \"Mã Điểm\", Diem.DiemSo as \"Điểm Số\", LoaiDiem.Ten as \"Loại Điểm\" \r\nFROM Diem\r\nJOIN HocSinh ON Diem.MaHS = HocSinh.MaHS\r\nJOIN Mon ON Diem.MaMon = Mon.MaMon\r\nJOIN LoaiDiem ON Diem.MaLoaiDiem = LoaiDiem.MaLoaiDiem\r\nWhere HocSinh.MaHS = " + MaHS + " AND Mon.MaMon =" + MaMon + ";";
+            DataTable dt = new DataTable();
+            SqlCommand command = new SqlCommand(sqlQuery, connection);
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            try
+            {
+                da.Fill(dt);
+                connection.Close();
+                return dt;
+            }
+            catch (Exception)
+            {
+                connection.Close();
+                return dt;
             }
         }
     }

@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,28 @@ namespace DAL
 {
     public class LoaiDiem_DAL
     {
+
+        public DataTable getDiemDTT()
+        {
+
+            Connection conn = new Connection();
+            SqlConnection connection = conn.OpenConnection();
+            string sqlQuery = "SELECT LoaiDiem.MaLoaiDiem as \"Mã Loại Điểm\", LoaiDiem.Ten as \"Tên Loại Điểm\", LoaiDiem.HeSo as \"Hệ Số\", LoaiDiem.MoTa as \"Mô Tả\"\r\nFROM LoaiDiem";
+            DataTable dt = new DataTable();
+            SqlCommand command = new SqlCommand(sqlQuery, connection);
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            try
+            {
+                da.Fill(dt);
+                connection.Close();
+                return dt;
+            }
+            catch (Exception)
+            {
+                connection.Close();
+                return dt;
+            }
+        }
 
         public List<LoaiDiem_DTO> getLoaiDiem()
         {

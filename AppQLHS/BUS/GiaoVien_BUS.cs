@@ -1,5 +1,6 @@
 ﻿using DAL;
 using DTO;
+using System.Data;
 
 namespace BUS
 {
@@ -9,6 +10,12 @@ namespace BUS
         public List<GiaoVien_DTO> loadGiaoVien()
         {
             return gv.LoadGiaoVien();
+        }
+
+        public DataTable loadGiaoVien1()
+        {
+            GiaoVien_DAL g = new GiaoVien_DAL();
+            return g.LoadGiaoVien1();
         }
 
         public List<GiaoVien_DTO> loadGiaoVien(string t)

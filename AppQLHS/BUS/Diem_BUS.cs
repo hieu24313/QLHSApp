@@ -2,6 +2,7 @@
 using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,6 +45,13 @@ namespace BUS
         {
             Diem_DAL d = new Diem_DAL();
             return d.delDiem(id);
+        }
+
+        public DataTable getChiTietDiem(int idHS, int idMon )
+        {
+            Diem_DAL d = new Diem_DAL();
+            DataTable dt = d.getChiTietDiem(idHS, idMon);
+            return dt;
         }
     }
 }

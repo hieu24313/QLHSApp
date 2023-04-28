@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,28 @@ namespace DAL
 {
     public class QuanLyLop_DAL
     {
+        public DataTable getlopDTT()
+        {
+
+            Connection conn = new Connection();
+            SqlConnection connection = conn.OpenConnection();
+            string sqlQuery = "SELECT Lop.MaLop as \"Mã Lớp\", Lop.TenLop as \"Tên Lớp\", Lop.MaGV as \"Giáo Viên Chủ Nhiệm\", Lop.NamHoc as \"Năm Học\" \r\nFrom Lop";
+            DataTable dt = new DataTable();
+            SqlCommand command = new SqlCommand(sqlQuery, connection);
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            try
+            {
+                da.Fill(dt);
+                connection.Close();
+                return dt;
+            }
+            catch (Exception)
+            {
+                connection.Close();
+                return dt;
+            }
+        }
+
         public List<Lop_DTO> getLop()
         {
             Connection conn = new Connection();

@@ -19,6 +19,9 @@ namespace GUI_QLHSApp
         public frmLoaiDiem()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false; // chặn phóng to form
+           // this.MinimizeBox = false; // chặn thu nhỏ form
         }
 
         private void btnThoatLD_Click(object sender, EventArgs e)
@@ -35,7 +38,7 @@ namespace GUI_QLHSApp
         private void frmLoaiDiem_Load(object sender, EventArgs e)
         {
             LoaiDiem_BUS ld = new LoaiDiem_BUS();
-            dgvLoaiDiem.DataSource = ld.getLoaiDiem();
+            dgvLoaiDiem.DataSource = ld.getDiemDTT();
             rdMa.Checked = true;
 
 
@@ -53,7 +56,7 @@ namespace GUI_QLHSApp
 
         private void btnThemLD_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtTen.Text) || string.IsNullOrEmpty(txtHeSo.Text)  || string.IsNullOrEmpty(txtMoTa.Text))
+            if (string.IsNullOrEmpty(txtTen.Text) || string.IsNullOrEmpty(txtHeSo.Text) || string.IsNullOrEmpty(txtMoTa.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!!!");
             }
@@ -63,11 +66,11 @@ namespace GUI_QLHSApp
                 int maLoaiDiem = (int)nudMaLD.Value;
                 List<LoaiDiem_DTO> ldbus = ld.getLoaiDiem();
                 bool kttt = true;
-                foreach(LoaiDiem_DTO l in  ldbus)
+                foreach (LoaiDiem_DTO l in ldbus)
                 {
                     if (maLoaiDiem == l.MaLoaiDiem)
                     {
-                        kttt = false; 
+                        kttt = false;
                         break;
                     }
                 }
@@ -84,7 +87,7 @@ namespace GUI_QLHSApp
                         bool kt = ld.addLoaiDiem(d);
                         if (kt)
                         {
-                            dgvLoaiDiem.DataSource = ld.getLoaiDiem();
+                            dgvLoaiDiem.DataSource = ld.getDiemDTT();
                             MessageBox.Show("Thêm Thành Công");
                             resetGiaTri();
                         }
@@ -103,13 +106,13 @@ namespace GUI_QLHSApp
                     MessageBox.Show("Mã loại điểm đã tồn tại vui lòng đổi mã khác!!!");
                 }
             }
-            
+
         }
 
         private void rdMa_CheckedChanged(object sender, EventArgs e)
         {
             LoaiDiem_BUS ld = new LoaiDiem_BUS();
-            dgvLoaiDiem.DataSource = ld.getLoaiDiem();
+            dgvLoaiDiem.DataSource = ld.getDiemDTT();
             nudMaTK.Enabled = true;
             txtTenLoaiDiem.Enabled = false;
         }
@@ -117,7 +120,7 @@ namespace GUI_QLHSApp
         private void rdTen_CheckedChanged(object sender, EventArgs e)
         {
             LoaiDiem_BUS ld = new LoaiDiem_BUS();
-            dgvLoaiDiem.DataSource = ld.getLoaiDiem();
+            dgvLoaiDiem.DataSource = ld.getDiemDTT();
             nudMaTK.Enabled = false;
             txtTenLoaiDiem.Enabled = true;
         }
@@ -175,7 +178,7 @@ namespace GUI_QLHSApp
                 }
                 else
                 {
-                    
+
                     dgvLoaiDiem.DataSource = loaiid;
                 }
 
@@ -220,7 +223,7 @@ namespace GUI_QLHSApp
                     if (kt)
                     {
                         MessageBox.Show("Cập nhật thành công");
-                        dgvLoaiDiem.DataSource = ld.getLoaiDiem();
+                        dgvLoaiDiem.DataSource = ld.getDiemDTT();
                         resetGiaTri();
                     }
                     else
@@ -237,7 +240,7 @@ namespace GUI_QLHSApp
             {
                 MessageBox.Show("Không tồn tại loại điểm mang mã bạn đã nhập!!!");
             }
-            
+
         }
     }
 }

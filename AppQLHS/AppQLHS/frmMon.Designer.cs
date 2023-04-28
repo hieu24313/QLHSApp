@@ -78,6 +78,7 @@
             // 
             nudMaMon.Location = new Point(128, 29);
             nudMaMon.Margin = new Padding(3, 4, 3, 4);
+            nudMaMon.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             nudMaMon.Name = "nudMaMon";
             nudMaMon.Size = new Size(137, 27);
             nudMaMon.TabIndex = 2;
@@ -163,6 +164,7 @@
             // 
             nudMaMonTK.Location = new Point(128, 29);
             nudMaMonTK.Margin = new Padding(3, 4, 3, 4);
+            nudMaMonTK.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             nudMaMonTK.Name = "nudMaMonTK";
             nudMaMonTK.Size = new Size(137, 27);
             nudMaMonTK.TabIndex = 2;
@@ -213,6 +215,7 @@
             // 
             // dgvMon
             // 
+            dgvMon.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvMon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvMon.Location = new Point(14, 247);
             dgvMon.Margin = new Padding(3, 4, 3, 4);

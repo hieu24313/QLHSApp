@@ -32,6 +32,8 @@ namespace AppQLHS
                     break;
                 }
             }
+            this.MaximizeBox = false; // chặn phóng to form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
 
         }
 

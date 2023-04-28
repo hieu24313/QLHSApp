@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,11 @@ namespace BUS
     public class LoaiDiem_BUS
     {
         LoaiDiem_DAL ld = new LoaiDiem_DAL();
+
+        public DataTable getDiemDTT()
+        {
+            return ld.getDiemDTT();
+        }
         public List<LoaiDiem_DTO> getLoaiDiem()
         {
             return ld.getLoaiDiem();

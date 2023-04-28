@@ -2,10 +2,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAL
 {
@@ -38,8 +40,30 @@ namespace DAL
                 }
                 conn.CloseConnection();
             }
-            
+
             return gv;
+        }
+
+        public DataTable LoadGiaoVien1()
+        {
+
+            Connection conn = new Connection();
+            SqlConnection connection = conn.OpenConnection();
+            string sqlQuery = "SELECT GiaoVien.MaGV as \"Mã Giáo Viên\", GiaoVien.HoGV as \"Họ\", GiaoVien.TenGV as \"Tên\", GiaoVien.NgaySinh as \"Ngày Sinh\", GiaoVien.QueQuan as \"Quê Quán\", GiaoVien.SoDT as \"Số Điện Thoại\" FROM GiaoVien";
+            DataTable dt = new DataTable();
+            SqlCommand command = new SqlCommand(sqlQuery, connection);
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            try
+            {
+                da.Fill(dt);
+                connection.Close();
+                return dt;
+            }
+            catch (Exception)
+            {
+                connection.Close();
+                return dt;
+            }
         }
 
         public List<GiaoVien_DTO> LoadGiaoVienTen(string t)

@@ -112,6 +112,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(853, 485);
             Controls.Add(label1);
