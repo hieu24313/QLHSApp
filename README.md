@@ -1,2 +1,2 @@
 # QLHSApp
-App QLHS by winform c#
+App QLHS bằng winform c#, theo cấu trúc 3 lớp
